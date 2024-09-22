@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GoIT_HW_04</title>
+    <title>GoIT_HW_05</title>
     <!-- Normilize -->
     <link
       rel="stylesheet"
@@ -595,8 +595,89 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-title">Subscribe</p>
+          <input type="email" />
+          <button>Subscribe</button>
+        </div>
       </div>
     </footer>
     <!-- #endregion Footer -->
+    <!-- #region Modal -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="modal-btn close-modal" type="button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-capture">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form class="leave-contacts-form" name="leave-contacts-form">
+          <div class="form-wrapper">
+            <label class="form-label" for="userName">Name</label>
+            <input
+              class="form-field"
+              type="text"
+              id="userName"
+              name="userName"
+            />
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="userPhone">Phone</label>
+            <input
+              class="form-field"
+              type="tel"
+              id="userPhone"
+              name="userPhone"
+            />
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="userEmail">Email</label>
+            <input
+              class="form-field"
+              type="email"
+              id="userEmail"
+              name="userEmail"
+            />
+          </div>
+
+          <div class="form-wrapper">
+            <label class="form-label" for="userComment">Comment</label>
+            <input
+              class="form-field"
+              type="text"
+              id="userComment"
+              name="userComment"
+            />
+          </div>
+
+          <label class="form-agreement">
+            <input name="userAgreement" type="checkbox" value="true" checked />
+            
+
+
+            <span class="form-agreement-text">
+              I accept the terms and conditions of the
+              <a
+                class="form-agreement-link"
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Privacy Policy
+              </a>
+            </span>
+          </label>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion Modal -->
   </body>
 </html>

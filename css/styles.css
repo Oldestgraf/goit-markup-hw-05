@@ -536,3 +536,74 @@ button {
 }
 
 /* #endregion Footer */
+
+/* #region Modal */
+
+.modal-overlay {
+  background: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  /* opacity: 0; */
+  /* pointer-events: none; */
+}
+
+.modal-overlay.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 408px;
+  height: 584px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--dairy);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  overflow-y: auto;
+}
+
+.modal-btn.close-modal {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  color: var(--navy-blue);
+}
+
+.modal-btn.close-modal:hover,
+.modal-btn.close-modal:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+}
+
+.modal-btn-icon {
+  fill: var(--cornflower);
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+}
+
+.modal-capture {
+  padding: 72px 24px 16px;
+  color: var(--navy-blue);
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.32px;
+}
+
+/* #endregion Modal */
