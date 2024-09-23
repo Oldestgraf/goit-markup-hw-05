@@ -775,22 +775,28 @@ button {
   fill: transparent;
   border-radius: 2px;
   border: 1px solid var(--navy-blue-modal);
+
   transition: var(--anim-main);
-  transition-property: background-color, border;
+  transition-property: background-color, border, fill;
   cursor: pointer;
   margin-right: 8px;
 }
 .checkbox-icon {
   opacity: 0;
+  transition: var(--anim-main);
 }
 
-input[type="checkbox"]:checked + .checkbox {
+.user-privacy-checkbox:checked + .form-agreement-label .checkbox {
   background-color: var(--ocean);
   border-color: transparent;
+  border: none;
   fill: var(--cloud);
 }
 
-input[type="checkbox"]:checked + .checkbox > .checkbox-icon {
+.user-privacy-checkbox:checked
+  + .form-agreement-label
+  .checkbox
+  .checkbox-icon {
   opacity: 1;
 }
 
@@ -798,7 +804,7 @@ input[type="checkbox"]:checked + .checkbox > .checkbox-icon {
   display: block;
   margin-bottom: 24px;
 }
-.form-agreement-text {
+.form-agreement-label {
   color: var(--light-slate);
   font-family: Roboto;
   font-size: 12px;
