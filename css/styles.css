@@ -607,6 +607,7 @@ button {
 .modal-overlay {
   background: var(--navy-blue-modal);
   transition: var(--anim-main);
+  transition-property: opacity, visibility;
   position: fixed;
   top: 0;
   left: 0;
@@ -614,9 +615,9 @@ button {
   height: 100%;
   z-index: 999;
 
-  opacity: 0;
+  /* opacity: 0;
   pointer-events: none;
-  visibility: hidden;
+  visibility: hidden; */
 }
 
 .modal-overlay.is-open {
@@ -641,6 +642,7 @@ button {
   overflow-y: auto;
   padding: 72px 24px 24px 24px;
   transition: var(--anim-main);
+  transition-property: transform;
 }
 
 .modal-btn.close-modal {
@@ -664,7 +666,7 @@ button {
 
 .modal-btn.close-modal:hover,
 .modal-btn.close-modal:focus {
-  fill: var(--cornflower);
+  fill: var(--white);
   background-color: var(--ocean);
   border: transparent;
 }
@@ -746,10 +748,11 @@ button {
 
   font-family: Roboto;
   font-size: 12px;
-  line-height: 14px; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.48px;
 
   border-radius: 4px;
+  color: var(--navy-blue-modal);
   border: 1px solid var(--navy-blue-modal);
   outline: transparent;
   background-color: transparent;
@@ -773,7 +776,7 @@ button {
   border-radius: 2px;
   border: 1px solid var(--navy-blue-modal);
   transition: var(--anim-main);
-  transition-property: background-color;
+  transition-property: background-color, border;
   cursor: pointer;
   margin-right: 8px;
 }
@@ -799,7 +802,7 @@ input[type="checkbox"]:checked + .checkbox > .checkbox-icon {
   color: var(--light-slate);
   font-family: Roboto;
   font-size: 12px;
-  line-height: 14px; /* 116.667% */
+  line-height: 1.17;
   letter-spacing: 0.48px;
 }
 .form-agreement-link {
