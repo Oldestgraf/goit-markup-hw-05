@@ -767,33 +767,38 @@ button {
   border-color: var(--iris);
 }
 .checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--navy-blue-modal);
+  border-radius: 2px;
+  transition-property: background-color, border, fill;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
   fill: transparent;
-  border-radius: 2px;
-  border: 1px solid var(--navy-blue-modal);
 
   transition: var(--anim-main);
-  transition-property: background-color, border, fill;
   cursor: pointer;
   margin-right: 8px;
 }
 .checkbox-icon {
   opacity: 0;
   transition: var(--anim-main);
+  transition-property: background-color, border, fill;
 }
 
-.user-privacy-checkbox:checked + .form-agreement-label .checkbox {
+input {
+  transition: var(--anim-main);
+  transition-property: background-color, border, fill;
+}
+
+input[type="checkbox"]:checked + .form-agreement-label .checkbox {
   background-color: var(--ocean);
-  border-color: transparent;
   border: none;
   fill: var(--cloud);
 }
 
-.user-privacy-checkbox:checked
+input[type="checkbox"]:checked
   + .form-agreement-label
   .checkbox
   .checkbox-icon {
