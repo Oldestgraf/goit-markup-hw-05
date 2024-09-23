@@ -550,11 +550,8 @@ button {
 }
 .footer-subscribe-form {
   display: flex;
-}
-.footer-subscribe-label {
-  gap: 24px;
-  display: flex;
   align-items: center;
+  gap: 24px;
 }
 
 .footer-subscribe-input {
@@ -570,7 +567,6 @@ button {
   border-radius: 4px;
   border: 1px solid var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin-right: 24px;
   outline: transparent;
   transition: var(--anim-main);
   transition-property: border-color;
@@ -618,9 +614,9 @@ button {
   height: 100%;
   z-index: 999;
 
-  /* opacity: 0;
+  opacity: 0;
   pointer-events: none;
-  visibility: hidden; */
+  visibility: hidden;
 }
 
 .modal-overlay.is-open {
