@@ -766,28 +766,35 @@ button {
 .form-comment:focus {
   border-color: var(--iris);
 }
+
+.form-agreement {
+  display: block;
+  margin-bottom: 24px;
+}
+.form-agreement-label {
+  color: var(--light-slate);
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+}
 .checkbox {
   width: 16px;
   height: 16px;
   border: 1px solid var(--navy-blue-modal);
   border-radius: 2px;
+  transition: var(--anim-main);
   transition-property: background-color, border, fill;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
 
-  transition: var(--anim-main);
   cursor: pointer;
   margin-right: 8px;
 }
 .checkbox-icon {
   opacity: 0;
-  transition: var(--anim-main);
-  transition-property: background-color, border, fill;
-}
-
-input {
   transition: var(--anim-main);
   transition-property: background-color, border, fill;
 }
@@ -803,18 +810,6 @@ input[type="checkbox"]:checked
   .checkbox
   .checkbox-icon {
   opacity: 1;
-}
-
-.form-agreement {
-  display: block;
-  margin-bottom: 24px;
-}
-.form-agreement-label {
-  color: var(--light-slate);
-  font-family: Roboto;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.48px;
 }
 .form-agreement-link {
   color: var(--iris);
